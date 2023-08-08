@@ -1,0 +1,200 @@
+   /* Estilos CSS para el navbar */
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .navbar {
+    position:initial;
+    top: 0;
+    width: 100%;
+    background-color: purple;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar li {
+    margin: 0 10px;
+  }
+
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  /* Estilos CSS para la sección principal con fondo y foto del Dr. House */
+  .hero {
+    position: relative;
+    height: 500px;
+    background-image: url('dr.house.jpg');
+    opacity: 75%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  .hero img {
+    width: 1000px;
+    color: black;
+    animation: epic-movement 3s infinite alternate;
+  }
+
+  @keyframes epic-movement {
+    0% { transform: translateX(-20px); }
+    100% { transform: translateX(20px); }
+  }
+
+  /* Estilos CSS para las secciones de historia y habilidades */
+
+  /* Estilos de la sección de historia */
+#historia {
+    padding: 50px;
+  }
+  
+  #historia h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de la imagen de la historia */
+  #historia img {
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-left: 20px;
+    animation: epicFadeInOut 4s infinite;
+  }
+  
+  /* Estilos del texto de la historia */
+  #historia p {
+    text-align: justify;
+  }
+  
+  /* Animación épica de entrada y salida */
+  @keyframes epicFadeInOut {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  }
+  .section {
+    padding: 50px;
+  }
+
+  section text{
+    font-size: 34%;
+  }
+
+  .section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: #88beb5;
+  }
+
+  /* Estilos de la sección de personajes */
+#personajes {
+    padding: 50px;
+  }
+  
+  #personajes h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de las imágenes de personajes */
+  .card img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+    animation: epicMovement 5s infinite;
+  }
+  
+  /* Estilos del texto de personajes */
+  .card p {
+    text-align: justify;
+  }
+  
+  /* Animación épica */
+  @keyframes epicMovement {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  .card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+
+  }
+
+  /* Estilos CSS para el footer */
+  .footer {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Estilos CSS para el navbar en dispositivos móviles */
+@media (max-width: 600px) {
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .navbar li {
+      margin: 5px 0;
+    }
+  }
+  
+  /* Estilos CSS para la sección principal en dispositivos móviles */
+  @media (max-width: 600px) {
+    .hero h1 {
+      font-size: 28px;
+    }
+  
+    .hero img {
+      width: 150px;
+    }
+  }
+  
+  /* Estilos CSS para las secciones de historia y habilidades en dispositivos móviles */
+  @media (max-width: 600px) {
+    .section {
+      padding: 30px;
+    }
+  
+    .section h2 {
+      font-size: 20px;
+    }
+  }
